@@ -55,6 +55,14 @@ Users bet with points on sports games - results, stats, and live in-game events.
   2. **Per-game format:** Fixed fee per game
 - **Duration options:** Full season, single round, cup-style tournament — all available
 
+### AI Betting Advisor (LLM)
+- Chat interface where users can consult an AI before placing bets
+- AI analyzes historical match data (past results, head-to-head, form, stats) to give recommendations
+- User asks naturally: "כדאי לי להמר על מנצ'סטר סיטי?" and gets a data-backed answer
+- Data source: historical results from the sports API
+- Tone: friendly advisor, not a guarantee — always frames as "based on past data..."
+- Accessible from: Game Detail screen (floating button or tab)
+
 ### Leaderboards & Social
 - General leaderboard (global)
 - Private league leaderboards
@@ -111,15 +119,31 @@ Users bet with points on sports games - results, stats, and live in-game events.
 ---
 
 ## Design Preferences
-- TBD (to be discussed)
+- **Mode:** Light (bright) design
+- **Style:** Minimal / Modern (Option C)
+- **Color palette:**
+  - Primary: Green `#4CAF50`
+  - Background: White `#FFFFFF`
+  - Secondary background: Light gray `#F5F5F5`
+  - Text primary: `#1A1A1A`
+  - Text secondary: `#757575`
+  - Accent/interactive: `#4CAF50`
+- Lots of whitespace, clean cards, rounded corners
+- Feel: Revolut / Cash App meets sports — modern, not a typical dark sportsbook
 
 ---
 
-## Open Questions
-- Design style: dark/light mode? color palette? reference apps?
-- Monetization: ads? premium league features?
-- Quiz format: how exactly do sports quizzes work — timed? daily? tied to upcoming games?
+## Quiz / Trivia
+- Questions tied to **upcoming games** (e.g., "Who scored the most goals in the CL this season?")
+- Also: general sports trivia — available as long as the user wants to earn points
+- Frequency: On-demand (unlimited as long as player keeps playing to earn points)
 
 ---
 
-*Last updated: 2026-03-17*
+## Monetization
+- **Phase 1:** No monetization — free app, points only
+- Future: TBD (ads / premium league features under consideration)
+
+---
+
+*Last updated: 2026-03-17 (design decisions added)*
